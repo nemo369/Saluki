@@ -1,8 +1,4 @@
-var data = {
-    heading: 'My Todos',
-    todos: ['Swim', 'Climb', 'Jump', 'Play']
-};
-
+import { data } from './data'
 
 function template(props) {
     return `
@@ -11,7 +7,7 @@ function template(props) {
 			${props.todos.map(function (todo) {
         return `<li>${todo}</li>`;
     }).join('')}
-		</ul>`;
+        </ul>`;
 }
 
 
